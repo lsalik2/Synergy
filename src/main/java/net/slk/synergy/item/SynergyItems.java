@@ -47,6 +47,9 @@ public class SynergyItems {
      *  Add the texture in assets/synergy/textures/item (needs to be a .png with the same item identifier as the file name)
      *  Add the model data in assets/synergy/models/item (needs to be a .json with the same item identifier as the file name)
      *  Add the model description in assets/synergy/items (needs to be a .json with the same item identifier as the file name)
+     *
+     *  OPTIONAL: Add a crafting recipe for item in data/mod-id/recipe (JSON generator: https://crafting.thedestruc7i0n.ca/)
+     *  OPTIONAL: Add a custom tooltip (https://docs.fabricmc.net/develop/items/first-item#custom-tooltips)
      */
 
     // Statically initialize the SynergyItems class
