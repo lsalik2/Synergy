@@ -1,6 +1,7 @@
 package net.slk.synergy;
 
 import net.fabricmc.api.ModInitializer;
+import net.slk.synergy.block.SynergyBlocks;
 import net.slk.synergy.item.SynergyItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,5 +13,6 @@ public class Synergy implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		SynergyItems.initialize();
+		SynergyBlocks.initialize();
 	}
 }

@@ -30,7 +30,7 @@ public class SynergyItems {
     // Methods to store the item group and a registry key for it, used for a mod-unique creative tab
     public static final RegistryKey<ItemGroup> CUSTOM_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(Synergy.MOD_ID, "item_group"));
     public static final ItemGroup CUSTOM_ITEM_GROUP = FabricItemGroup.builder()
-            .icon(() -> new ItemStack(SynergyItems.CONCENTRATED_ENERGY_JEWEL))
+            .icon(() -> new ItemStack(SynergyItems.INSIGNIA_OF_POWER))
             .displayName(Text.translatable("itemGroup.synergy"))
             .build();
 
