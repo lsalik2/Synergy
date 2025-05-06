@@ -38,7 +38,7 @@ public class SynergyItems {
     public static final Item CONCENTRATED_ENERGY_JEWEL = registerItem("concentrated_energy_jewel", Item::new, new Item.Settings());
     public static final Item ATTUNEMENT_STONE = registerItem("attunement_stone", Item::new, new Item.Settings());
     public static final Item INSIGNIA_OF_POWER = registerItem("insignia_of_power", Item::new, new Item.Settings());
-
+    public static final Item CHANNELER_LICENSE = registerItem("channeler_license", Item::new, new Item.Settings());
     // ...
 
     /** Once an item above have been added, make sure to :
@@ -62,6 +62,7 @@ public class SynergyItems {
             itemGroup.add(SynergyItems.CONCENTRATED_ENERGY_JEWEL);
             itemGroup.add(SynergyItems.ATTUNEMENT_STONE);
             itemGroup.add(SynergyItems.INSIGNIA_OF_POWER);
+            itemGroup.add(SynergyItems.CHANNELER_LICENSE);
             // ...
         });
     }
