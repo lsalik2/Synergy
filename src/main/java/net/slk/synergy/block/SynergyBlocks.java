@@ -61,6 +61,13 @@ public class SynergyBlocks {
             AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(10.0F, 10.0F),
             true
     );
+
+    public static final Block DEEPSLATE_CONCENTRATED_ENERGY_JEWEL_ORE = registerBlock( // TODO add world generation (gotta figure out how!)
+            "deepslate_concentrated_energy_jewel_ore",
+            Block::new,
+            AbstractBlock.Settings.create().mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE).requiresTool().strength(12.0F, 12.0F),
+            true
+    );
     // ...
 
     /** Once a block above has been added, make sure to :
@@ -83,6 +90,7 @@ public class SynergyBlocks {
         ItemGroupEvents.modifyEntriesEvent(SynergyItems.CUSTOM_ITEM_GROUP_KEY).register((itemGroup) -> {
             itemGroup.add(SynergyBlocks.CONCENTRATED_ENERGY_JEWEL_BLOCK.asItem());
             itemGroup.add(SynergyBlocks.CONCENTRATED_ENERGY_JEWEL_ORE.asItem());
+            itemGroup.add(SynergyBlocks.DEEPSLATE_CONCENTRATED_ENERGY_JEWEL_ORE.asItem());
             // ...
         });
     }

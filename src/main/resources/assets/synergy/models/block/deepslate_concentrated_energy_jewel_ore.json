@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "synergy:block/deepslate_concentrated_energy_jewel_ore"
+  }
+}
