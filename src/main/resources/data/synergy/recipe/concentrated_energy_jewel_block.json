@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "synergy:concentrated_energy_jewel",
+        "synergy:concentrated_energy_jewel",
+        "synergy:concentrated_energy_jewel",
+        "synergy:concentrated_energy_jewel",
+        "synergy:concentrated_energy_jewel",
+        "synergy:concentrated_energy_jewel",
+        "synergy:concentrated_energy_jewel",
+        "synergy:concentrated_energy_jewel",
+        "synergy:concentrated_energy_jewel"
+    ],
+    "result": {
+        "id": "synergy:concentrated_energy_jewel_block",
+        "count": 1
+    }
+}

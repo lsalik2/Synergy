@@ -41,7 +41,7 @@ public class SynergyItems {
     public static final Item CHANNELER_LICENSE = registerItem("channeler_license", Item::new, new Item.Settings());
     // ...
 
-    /** Once an item above have been added, make sure to :
+    /** Once an item above has been added, make sure to :
      *  Add the item to the custom item group in the initialize method
      *  Add the translation in src/main/resources/assets/synergy/lang/en_us.json
      *  Add the texture in assets/synergy/textures/item (needs to be a .png with the same item identifier as the file name)
