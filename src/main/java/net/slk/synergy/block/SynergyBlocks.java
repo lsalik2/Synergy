@@ -3,6 +3,9 @@ package net.slk.synergy.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.MapColor;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -11,6 +14,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.slk.synergy.Synergy;
 import net.slk.synergy.item.SynergyItems;
 
@@ -48,7 +52,13 @@ public class SynergyBlocks {
     public static final Block CONCENTRATED_ENERGY_JEWEL_BLOCK = registerBlock( // TODO add mapColor
             "concentrated_energy_jewel_block",
             Block::new,
-            AbstractBlock.Settings.create().requiresTool().strength(5.0F, 6.0F).sounds(BlockSoundGroup.METAL),
+            AbstractBlock.Settings.create().requiresTool().strength(15.0F, 15.0F).sounds(BlockSoundGroup.METAL).mapColor(MapColor.BLACK),
+            true
+    );
+    public static final Block CONCENTRATED_ENERGY_JEWEL_ORE = registerBlock( // TODO add world generation (gotta figure out how!)
+            "concentrated_energy_jewel_ore",
+            Block::new,
+            AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(10.0F, 10.0F),
             true
     );
     // ...
@@ -72,6 +82,7 @@ public class SynergyBlocks {
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(SynergyItems.CUSTOM_ITEM_GROUP_KEY).register((itemGroup) -> {
             itemGroup.add(SynergyBlocks.CONCENTRATED_ENERGY_JEWEL_BLOCK.asItem());
+            itemGroup.add(SynergyBlocks.CONCENTRATED_ENERGY_JEWEL_ORE.asItem());
             // ...
         });
     }
